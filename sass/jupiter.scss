@@ -1,0 +1,53 @@
+// variables sass
+@import "variables";
+
+//componentes
+$cssCore: false;
+$cssHelpers: true;
+@import "ed-grid/ed-grid";
+
+// Variables Css
+:root {
+  --font-title: 20px;
+  --font-text: 15px;
+  --mtopsectio: 40px;
+  --mbotomsectio: 40px;
+  --mtop: 20px;
+  --mbotom: 20px;
+
+  @include to(m) {
+    --font-title: 18px;
+    --font-text: 13px;
+    --mtop: 15px;
+    --mbotom: 15px;
+    --mtopsectio: 20px;
+  --mbotomsectio: 20px;
+  }
+}
+
+// styles theme prevision
+@import "layouts/menu";
+@import "layouts/home";
+@import "layouts/footer";
+
+.spd{
+  padding-right: 0 !important;
+}
+
+.spi{
+  padding-left: 0 !important;
+}
+
+body {
+  background: #fff !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img.wp-post-image, article img, figure, img, #secondary img {
+  max-width: 100%;
+  height: auto; 
+}

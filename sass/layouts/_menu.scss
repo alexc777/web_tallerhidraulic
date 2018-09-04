@@ -1,0 +1,94 @@
+.navbar-nav .nav-link {
+  text-transform: none;
+  font-weight: 400;
+  color: $negro;
+  border: none;
+
+  @include to(m) {
+    text-align: center;
+  }
+}
+
+.main-menu-container {
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+
+    @include to(l) {
+      padding: 20px 10px;
+    }
+
+    @include to(768px) {
+      padding: 20px 10px;
+    }
+}
+
+.main-menu {
+    @include edMenu(l,navBar);
+    a {
+        text-transform: none;
+        font-weight: 400;
+        color: #fff;
+        border: none;
+        font-size: var(--font-text);
+
+        &:hover {
+          border: none !important;
+        }
+    }
+}
+
+.main-nav {
+  @include edNav('left', l);
+  padding: 10px 1rem;
+}
+
+.nav-toggle {
+  @include navToggle(20px,$azul);
+  @include hideFrom(l);
+}
+
+.modal-backdrop {
+  @include to(s) {
+    z-index: 999;
+  }
+}
+
+.modal-header .close {
+  @include to(s) {
+    margin-left: 0 !important;
+  }
+}
+
+.modal-header {
+  @include to(s) {
+    border: none !important;
+    height: 80px;
+    background-size: 100%;
+  }
+}
+
+.modal-header .close {
+  @include to(s) {
+    padding: 0;
+  }
+}
+
+.ico_cerrar {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.modal-content {
+  @include to(s) {
+    border: none;
+    height: 100vh;
+  }
+}
+
+.modal-dialog {
+  @include to(s) {
+    margin: 0;
+  }
+}

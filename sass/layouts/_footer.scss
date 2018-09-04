@@ -1,0 +1,22 @@
+#wrapper-footer {
+    float: left;
+    width: 100%;
+    background: $gris;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+
+    p {
+        float: left;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: $negro;
+        margin-bottom: 5px;
+    }
+}
