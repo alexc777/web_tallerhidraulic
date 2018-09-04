@@ -52,6 +52,10 @@
                 height: 150px;
                 background: url('img/ico-rapido.svg') no-repeat center;
                 background-size: 50%;
+
+                @include to(m) {
+                    background-size: 40%
+                }
             }
             
             .ico_seguro {
@@ -60,6 +64,10 @@
                 height: 150px;
                 background: url('img/ico-seguro.svg') no-repeat center;
                 background-size: 35%;
+
+                @include to(m) {
+                    background-size: 30%
+                }
             }
             
             .ico_precio {
@@ -68,6 +76,10 @@
                 height: 150px;
                 background: url('img/ico-precio.svg') no-repeat center;
                 background-size: 35%;
+
+                @include to(m) {
+                    background-size: 30%
+                }
             }
         }
     }
